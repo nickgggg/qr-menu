@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 2px solid #242424;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header img {
+    margin: 0;
+    max-width: 99vw;
+    width: fit-content;
+    height: auto;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-category-group {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 .5rem 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 .5rem .25rem;
+}
+
+.menu-category {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight:900;
+    letter-spacing: .1rem;
+    text-shadow: -3px 2px 0px #242424;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    margin: .25rem;
+    border-bottom: 1px solid #242424;
+}
+
+#dark-bg {
+    background-color: #242424;
+}
+
+#dark-bg-menu-category {
+    font-weight: 900;
+    text-shadow: -3px 2px 0px #F14C2C;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: white;
+    border-bottom: 1px solid #F14C2C;
+}
+
+#dark-bg-item {
+    color: white;
+}
+
+.name-price {
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.price {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+
+.description {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: lowercase;
+    font-weight: lighter;
+    font-size: 12px;
+    color: #535353;
+}
