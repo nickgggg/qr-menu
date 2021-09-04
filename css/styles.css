@@ -39,7 +39,7 @@ body {
     -webkit-text-stroke-color: black;
     color: white;
     margin: .25rem;
-    border-bottom: 1px solid #242424;
+    border-bottom: 2px solid #242424;
 }
 #dark-bg {
     background-color: #242424;
@@ -49,7 +49,7 @@ body {
     text-shadow: -3px 2px 0px #F14C2C;
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: white;
-    border-bottom: 1px solid #F14C2C;
+    border-bottom: 2px solid #F14C2C;
 }
 #dark-bg-item {
     color: white;
@@ -347,13 +347,33 @@ li.mods-title {
     text-transform: capitalize;
     text-indent: -.25rem;
 }
-.coca-cola {
+.na-bev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     padding: 1rem;
-    font-family: 'Roboto Slab', serif;
-    font-size: 20px;
-    font-weight: bolder;
     background-color: #535353;
     color: white;
+}
+.coca-cola {
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    font-weight: bolder;
+    padding-bottom: .5rem;
+}
+.na-bev-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.na-bev-list>div {
+    padding: .1rem;
+    margin: .25rem;
+}
+.na-bev>div>:nth-child(odd) {
+    background-color: #F14C2C;
+    /* color: #F14C2C; */
 }
 
 /* FOOTER */
@@ -368,6 +388,11 @@ li.mods-title {
 }
 .footer>.logo {
     width: 50vw;
+}
+.happy-hour-wrapper {
+    border: 1px solid #969696;
+    margin-top: 1rem;
+    background-color: black;
 }
 .happy-hour {
     font-family: 'Roboto Slab', serif;
@@ -387,3 +412,49 @@ li.mods-title {
 .mf-hours {grid-area: mf-hours;}
 .fri-sat {grid-area: fri-sat;text-align: end;}
 .fs-hours {grid-area: fs-hours;}
+
+.happy-hour-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-family: 'Roboto Slab', serif;
+    padding: 1rem;
+    background-color: #696969;
+}
+.happy-hour-details>div {
+    padding-top: .5rem;
+    border-bottom: 1px solid white;
+}
+.six-for-six {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    border: none;
+}
+.social {
+    display: grid;
+    grid-template-areas: 
+    "friends friends"
+    "facebook instagram";
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    padding-top: .5rem;
+    border-top: 2px solid white;
+    font-weight: bolder;
+}
+.friends {
+    grid-area: friends;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+}
+.facebook {
+    grid-area: facebook;
+}
+.instagram {
+    grid-area: instagram;
+}
+.facebook img, .instagram img {
+    padding: 1rem;
+    width: 30px;
+    height: 30px;
+}
