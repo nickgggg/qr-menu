@@ -151,6 +151,9 @@ li.mods-title {
     text-transform: uppercase;
     font-weight: bold;
 }
+#mods-list {
+    text-transform: lowercase;
+}
 /* BEVERAGES */
 /* COCKTAILS */
 .beverages-title {
@@ -176,7 +179,7 @@ li.mods-title {
     color: white
 }
 .cocktails-section {
-    margin: 1rem 0 1rem 0;
+    margin: 0 0 1rem 0;
 }
 .cocktails-title {
     font-family: 'Roboto Slab', serif;
@@ -278,7 +281,7 @@ li.mods-title {
     grid-template-areas: 
     "wines-title wines-title"
     "reds whites"
-    "wine-group wine-group";
+    "wine-group-title wine-group-title";
     grid-gap: .5rem;
     padding: 2rem .25rem 2rem .25rem;
     background-color: #dddddd;
@@ -314,16 +317,17 @@ li.mods-title {
 .wine-section-title#whites-title {
     background-color: gray;
 }
-.wine-group {
-    grid-area: wine-group;
+.wine-group-title {
+    grid-area: wine-group-title;
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
     letter-spacing: .1rem;
-    padding-bottom: .25rem;
+    padding-bottom: .5rem;
+    border-top: 2px solid white;
 }
 .wine-listing {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "wine-price wine-name";
     margin-bottom: .25rem;
@@ -333,7 +337,7 @@ li.mods-title {
     grid-area: wine-price;
     font-family: 'Roboto Slab', serif;
     font-size: 12px;
-    /* font-weight: lighter;    */
+    font-weight: lighter;   
 }
 .wine-name {
     grid-area: wine-name;
@@ -341,6 +345,7 @@ li.mods-title {
     font-size: 12px;
     font-weight: normal;
     text-transform: capitalize;
+    text-indent: -.25rem;
 }
 .coca-cola {
     padding: 1rem;
