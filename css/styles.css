@@ -4,37 +4,31 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     border: 2px solid #242424;
 }
-
 .wrapper {
     display: flex;
     flex-direction: column;
 }
-
-.header img {
+.logo {
     margin: 0;
     max-width: 99vw;
     width: fit-content;
     height: auto;
 }
-
-.food {
+.food, .beverages {
     display: flex;
     flex-direction: column;
 }
-
 .menu-category-group {
     display: flex;
     flex-direction: column;
     padding: 0 0 .5rem 0;
 }
-
 .menu-item {
     display: flex;
     flex-direction: column;
     margin: 0 0 .5rem .25rem;
 }
-
-.menu-category {
+.menu-category-title {
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
     font-size: 30px;
@@ -47,11 +41,9 @@ body {
     margin: .25rem;
     border-bottom: 1px solid #242424;
 }
-
 #dark-bg {
     background-color: #242424;
 }
-
 #dark-bg-menu-category {
     font-weight: 900;
     text-shadow: -3px 2px 0px #F14C2C;
@@ -59,30 +51,25 @@ body {
     -webkit-text-stroke-color: white;
     border-bottom: 1px solid #F14C2C;
 }
-
 #dark-bg-item {
     color: white;
 }
-
 .name-price {
     display: flex;
     flex-direction: row;
 }
-
 .name {
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
 }
-
 .price {
     font-family: 'Roboto Slab', serif;
     font-size: 18px;
     font-weight: 300;
     margin-left: 1rem;
 }
-
 .description {
     font-family: 'PT Sans', sans-serif;
     text-transform: lowercase;
@@ -90,3 +77,308 @@ body {
     font-size: 12px;
     color: #535353;
 }
+.base-choices {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #242424;
+}
+.base-choices>span {
+    font-weight: bold;
+
+}
+
+/* SYO */
+
+.syo {
+    border: 2px dashed #F14C2C;
+}
+.syo-title {
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: .2rem;
+    text-shadow: -3px 2px 0px #242424;
+    /* -webkit-text-stroke-width: 1.5px; */
+    -webkit-text-stroke-color: black;
+    color: white;
+    border-bottom: 1px solid #242424;
+    background-color: #F14C2C;
+}
+.syo-section {
+    display: flex;
+    flex-direction: column;
+    margin: .25rem;
+}
+.syo-section-title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    background-color: #242424;
+}
+.syo-mods-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "col1 col2 col3";
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: .5rem;
+    font-family: 'PT Sans', sans-serif;
+}
+li {
+    font-size: 12px;
+    text-indent: -.25rem;
+}
+li.mods-title {
+    font-size: 16px;
+}
+.mods-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* BEVERAGES */
+/* COCKTAILS */
+.beverages-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 54px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    /* background: -webkit-linear-gradient(#F14C2C, #eee); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    background: #242424;
+}
+.cocktails {
+    padding: .25rem;
+    border: 2px solid #242424;
+    background-color: #242424;
+    color: white
+}
+.cocktails-section {
+    margin: 1rem 0 1rem 0;
+}
+.cocktails-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #F14C2C;
+    margin-bottom: .75rem;
+}
+.cocktails-listing {
+    display: grid;
+    grid-template-areas: 
+    "cocktails-price cocktails-name"
+    "cocktails-price cocktails-description";
+    grid-template-columns: 3rem 1fr;
+    padding-bottom: .5rem;
+}
+.cocktails-price, .cocktails-name {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+.cocktails-price {
+    grid-area: cocktails-price;
+    padding-right: 1rem;
+    font-weight: lighter;
+}
+.cocktails-name {
+    grid-area: cocktails-name;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+.cocktails-description {
+    grid-area: cocktails-description;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+/* BEERS */
+.beers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "beers-title beers-title"
+    "drafts bottles-cans";
+    grid-gap: .5rem;
+    padding: 2rem .25rem 2rem .25rem;
+    background-color: #dddddd;
+}
+.beers-title {grid-area: beers-title;}
+.drafts {grid-area: drafts;}
+.bottles-cans {grid-area: bottles-cans;}
+
+.beers-title, .wines-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: .25rem;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    background-color: #242424;
+    color: white;
+    padding-left: 1rem;
+}
+.beer-section-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .1rem;
+    background-color: #F14C2C;
+    padding: .25rem;
+    margin-bottom: .25rem;
+}
+.beer-listing {
+    display: flex;
+    flex-direction:row;
+    padding-bottom: .25rem;
+}
+.beer-price {
+    font-family: 'Roboto Slab', serif;  
+    font-size: 16px;
+    padding-right: 1rem;
+}
+.beer-name {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    text-indent: -.25rem;
+    text-transform: capitalize;
+}
+
+/* WINES */
+.wines {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "wines-title wines-title"
+    "reds whites"
+    "wine-group wine-group";
+    grid-gap: .5rem;
+    padding: 2rem .25rem 2rem .25rem;
+    background-color: #dddddd;
+}
+.wines-title {
+    grid-area: wines-title;
+}
+.reds {
+    grid-area: reds;
+}
+.whites {
+    grid-area: whites;
+}
+/* .reds, .whites {
+    border: 1px solid #969696;
+    padding: .1rem;
+} */
+.wine-section-title {
+    padding: .25rem;
+    margin-bottom: .25rem;
+}
+.wine-section-title#reds-title, .wine-section-title#whites-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .1rem;
+} 
+.wine-section-title#reds-title {
+    background-color: maroon;
+}
+.wine-section-title#whites-title {
+    background-color: gray;
+}
+.wine-group {
+    grid-area: wine-group;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    letter-spacing: .1rem;
+    padding-bottom: .25rem;
+}
+.wine-listing {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "wine-price wine-name";
+    margin-bottom: .25rem;
+    grid-gap: .1rem;
+}
+.wine-price {
+    grid-area: wine-price;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    /* font-weight: lighter;    */
+}
+.wine-name {
+    grid-area: wine-name;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.coca-cola {
+    padding: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #535353;
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #242424;
+    color: white;
+}
+.footer>.logo {
+    width: 50vw;
+}
+.happy-hour {
+    font-family: 'Roboto Slab', serif;
+    font-size: 26px;
+    margin: 1rem;
+}
+.happy-hours {
+    display: grid;
+    grid-template-columns: 7rem 7rem;
+    grid-template-areas: 
+    "mon-fri mf-hours"
+    "fri-sat fs-hours";
+    font-family: 'PT Sans', sans-serif;
+    grid-gap: .75rem
+}
+.mon-fri {grid-area: mon-fri;text-align: end;}
+.mf-hours {grid-area: mf-hours;}
+.fri-sat {grid-area: fri-sat;text-align: end;}
+.fs-hours {grid-area: fs-hours;}
