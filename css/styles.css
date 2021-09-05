@@ -13,6 +13,7 @@ body {
 }
 .header {
     background-color: #424242;
+    margin-bottom: .5rem;
 }
 .logo {
     margin: 0;
@@ -74,6 +75,7 @@ body {
     color: white;
     margin: .25rem;
     border-bottom: 2px solid #242424;
+    text-align: center;
 }
 #dark-bg {
     background-color: #242424;
@@ -129,12 +131,18 @@ body {
     font-weight: bold;
 
 }
+.food-image>img {
+    width: -webkit-fill-available;
+    height: auto;
+    padding: .25rem;
+}
 
 /* SYO */
 
 .syo {
     border: 2px dashed #F14C2C;
     background-color: white;
+    margin: 1rem 0 1rem 0;
 }
 .syo-title {
     display: flex;
@@ -147,8 +155,6 @@ body {
     font-weight: 900;
     letter-spacing: .2rem;
     text-shadow: -3px 2px 0px #242424;
-    /* -webkit-text-stroke-width: 1.5px; */
-    -webkit-text-stroke-color: black;
     color: white;
     border-bottom: 1px solid #242424;
     background-color: #F14C2C;
@@ -215,7 +221,8 @@ li.mods-title {
     padding: .25rem;
     border: 2px solid #242424;
     background-color: #242424;
-    color: white
+    color: white;
+    margin-bottom: 1rem;
 }
 .cocktails-section {
     margin: 0 0 1rem 0;
@@ -267,7 +274,8 @@ li.mods-title {
     "beers-title beers-title"
     "drafts bottles-cans";
     grid-gap: .5rem;
-    padding: 2rem .25rem 2rem .25rem;
+    padding: .5rem .25rem .5rem .25rem;
+    margin-bottom: 1rem;
     background-color: #dddddd;
 }
 .beers-title {grid-area: beers-title;}
@@ -323,7 +331,8 @@ li.mods-title {
     "reds whites"
     "wine-group-title wine-group-title";
     grid-gap: .5rem;
-    padding: 2rem .25rem 2rem .25rem;
+    padding: .5rem .25rem .5rem .25rem;
+    margin-bottom: 1rem;
     background-color: #dddddd;
 }
 .wines-title {
@@ -363,6 +372,7 @@ li.mods-title {
     font-size: 18px;
     letter-spacing: .1rem;
     padding-bottom: .5rem;
+    margin-top: .75rem;
     border-top: 2px solid white;
 }
 .wine-listing {
@@ -393,6 +403,7 @@ li.mods-title {
     justify-content: center;
     text-align: center;
     padding: 1rem;
+    margin-bottom: 1rem;
     background-color: #535353;
     color: white;
 }
@@ -473,6 +484,7 @@ li.mods-title {
     font-family: 'Roboto Slab', serif;
     font-weight: bolder;
     text-transform: uppercase;
+    padding-right: .5rem;
 }
 .six-for-six {
     display: flex;
@@ -487,7 +499,7 @@ li.mods-title {
     "facebook instagram";
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
-    padding-top: .5rem;
+    padding: .5rem 0 8rem 0;
     border-top: 2px solid white;
     font-weight: bolder;
     width: 40vw;
