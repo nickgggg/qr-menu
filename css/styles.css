@@ -1,9 +1,8 @@
 body {
-    margin: 0;
+    margin: 0 0 4rem 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
     border: 2px solid #242424;
-    max-width: 500px;
     background-color:black;
 }
 .wrapper {
@@ -17,9 +16,7 @@ body {
 }
 .logo {
     margin: 0;
-    max-width: 500px;
     width: -webkit-fill-available;
-    /* width: fit-content; */
     height: auto;
 }
 .skip-to-wrapper {
@@ -147,7 +144,6 @@ body {
 .syo-title {
     display: flex;
     justify-content: center;
-    max-width: 500px;
     width: -webkit-fill-available;
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
@@ -452,6 +448,7 @@ li.mods-title {
     font-weight: bold;
     margin: 1rem;
     text-align: center;
+    color:#dddddd;
 }
 .happy-hours {
     display: grid;
@@ -478,6 +475,8 @@ li.mods-title {
 }
 .happy-hour-details>div {
     padding-top: .5rem;
+}
+.happy-hour-details>div:not(:last-child) {
     border-bottom: 1px solid white;
 }
 .happy-hour-details>div>span {
@@ -485,12 +484,12 @@ li.mods-title {
     font-weight: bolder;
     text-transform: uppercase;
     padding-right: .5rem;
+    text-shadow: -3px 2px 0px #242424;
 }
 .six-for-six {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
-    border: none;
 }
 .social {
     display: grid;
@@ -499,7 +498,7 @@ li.mods-title {
     "facebook instagram";
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
-    padding: .5rem 0 8rem 0;
+    padding: .5rem 0 1rem 0;
     border-top: 2px solid white;
     font-weight: bolder;
     width: 40vw;
@@ -522,4 +521,37 @@ li.mods-title {
     padding: 1rem;
     width: 10vw;
     height: auto;
+}
+.website-link>a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #dddddd;
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 813px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .wrapper {
+        margin: 0 4rem 0 4rem;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 50vw;
+    }
+    .footer>.logo {
+        width: 25vw;
+    }
+    .social {
+        width: 25vw;
+    }
+    .facebook img, .instagram img {
+        width: 5vw;
+    }
 }
