@@ -333,6 +333,9 @@ li.mods-title {
     flex-direction:row;
     padding-bottom: .25rem;
 }
+.beer-listing:not(:last-child) {
+    border-bottom: 1px solid white;
+}
 .beer-price {
     font-family: 'Roboto Slab', serif;  
     font-size: 16px;
