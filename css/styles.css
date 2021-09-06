@@ -10,75 +10,90 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.header {
-    background-color: #424242;
-    margin-bottom: .5rem;
-}
 .logo {
     margin: 0;
+    padding: 0;
+}
+.logo>img {
     width: -webkit-fill-available;
+    max-width: 100vw;
     height: auto;
 }
 .skip-to-wrapper {
     margin: 0;
-    padding: .1rem .5rem .25rem .5rem;
+    padding: 0 0 .25rem .5rem;
 }
-.skip-to {
+.skip-to-text {
     font-family: 'Roboto Slab', serif;
-    font-size: 1.25rem;
-    color: white;
-    padding: .5rem .75rem .5rem .75rem;
-    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #dddddd;
+    letter-spacing: .15rem;
 }
 .skip-to-links {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: .5rem;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    gap: .75rem;
     margin: 0;
     padding: 0;
 }
+.skip-to-links::-webkit-scrollbar {
+    display: none;
+  }
 .skip-to-links>a {
     text-decoration: none;
     color: white;
-    background-color: #242424;
-    border: 1px solid #969696;
-    padding: .5rem .75rem .5rem .75rem;
+    /* background-color: #242424; */
+    border-bottom: 2px solid #F14C2C;
+    padding: .25rem 0 .25rem 0;
+    min-width: fit-content;
 }
+/* .skip-to-links>a:nth-child(odd) {
+    background-color: #424242;
+} */
 .food, .beverages {
     display: flex;
     flex-direction: column;
 }
+.food>div {
+    padding: 0 0 .5rem 0;
+}
 .menu-category-group {
     display: flex;
     flex-direction: column;
-    padding: 0 0 .5rem 0;
     background-color: white;
 }
-.menu-item {
+.menu-item, .menu-item-dark {
     display: flex;
     flex-direction: column;
     margin: 0 0 .5rem .25rem;
 }
-.menu-category-title {
+.menu-category-title, .menu-category-title-dark {
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
     font-size: 30px;
     font-weight:900;
     letter-spacing: .1rem;
+    margin: .25rem;
+    text-align: center;
+}
+.menu-category-title {
     text-shadow: -3px 2px 0px #242424;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
     color: white;
-    margin: .25rem;
     border-bottom: 2px solid #242424;
-    text-align: center;
+
 }
-#dark-bg {
+/* DARK BACKGROUND MENU SECTIONS */
+.menu-category-group-dark {
     background-color: #242424;
 }
-#dark-bg-menu-category {
-    font-weight: 900;
+.menu-category-title-dark {
+    color: white;
     text-shadow: -3px 2px 0px #F14C2C;
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: white;
@@ -87,9 +102,13 @@ body {
 #dark-bg-item {
     color: white;
 }
-#dark-bg-item>.description {
+.menu-item-dark {
+    color: white;
+}
+.menu-item-dark>.description {
     color: #dddddd;
 }
+/* END DARK BG MENU SECTIONS */
 .name-price {
     display: flex;
     flex-direction: row;
@@ -418,7 +437,7 @@ li.mods-title {
     padding: .1rem;
     margin: .25rem;
 }
-.na-bev>div>:nth-child(odd) {
+.na-bev>div>:nth-child(even) {
     background-color: #F14C2C;
     /* color: #F14C2C; */
 }
@@ -440,7 +459,7 @@ li.mods-title {
     border: 1px solid #969696;
     margin-top: 1rem;
     background-color: black;
-    width: 70vw;
+    width: 75%;
 }
 .happy-hour {
     font-family: 'Roboto Slab', serif;
@@ -497,8 +516,8 @@ li.mods-title {
     "friends friends"
     "facebook instagram";
     grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
-    padding: .5rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
+    padding-top: 1rem;
     border-top: 2px solid white;
     font-weight: bolder;
     width: 40vw;
@@ -527,6 +546,20 @@ li.mods-title {
     font-size: 1.25rem;
     color: #dddddd;
 }
+.back-to-top-button {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    border: 3px solid #F14C2C;
+    background: #dddddd;
+    padding: .75rem;
+    margin-top: 2rem;
+    letter-spacing: .1rem;
+}
+.back-to-top-button>a {
+    text-decoration: none;
+    color: #242424;
+}
 
 /* Landscape */
 @media only screen 
@@ -534,6 +567,9 @@ li.mods-title {
   and (max-device-width: 813px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
+    body {
+        border: none;
+    }
     .wrapper {
         margin: 0 4rem 0 4rem;
     }
@@ -555,3 +591,11 @@ li.mods-title {
         width: 5vw;
     }
 }
+@media screen 
+  and (min-device-width: 900px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      body {
+          width: 50vw;
+      }
+    }
