@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+/* HEADER */
 .logo {
     margin: 0;
     padding: 0;
@@ -20,55 +21,57 @@ body {
     max-width: 99vw;
     height: auto;
 }
-.skip-to-wrapper {
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
     margin: 0;
-    padding: .5rem 0 .5rem .5rem;
+    padding: .25rem 0 .25rem 0;
     position: sticky;
     align-self: flex-start;
     top: 0;
     width: -webkit-fill-available;
     background-color: rgba(0, 0, 0, .9);
 }
-/* .arrow-right {
+.arrow-right, .arrow-left {
     font-size: 1.5rem;
     font-weight: bolder;
     color: white;
-    position: absolute;
-    width: 100%;
-    text-align: end;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 75%, rgba(0,0,0,1) 100%);
-} */
-.skip-to-text {
+    width: fit-content;
+    vertical-align: middle;
+    margin: .5rem .1rem .5rem .1rem;
+}
+/* .skip-to-text {
     font-family: 'Roboto Slab', serif;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
     color: white;
     letter-spacing: .15rem;
-}
-.skip-to-links {
+} */
+.nav-links {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: scroll;
-    gap: .75rem;
     margin: 0;
     padding: 0;
 }
-.skip-to-links::-webkit-scrollbar {
+.nav-links::-webkit-scrollbar {
     display: none;
   }
-.skip-to-links>a {
+.nav-links>a {
     text-decoration: none;
     color: white;
     /* background-color: #242424; */
     border-bottom: 2px solid #F14C2C;
+    margin: .5rem;
     padding: .25rem 0 .25rem 0;
     min-width: fit-content;
 }
-.skip-to-links>a:last-child {
-    margin-right: .5rem;
+#appetizers-sides, #sliders, #salads, #soups, #bowls, #burgers, #burritos, #sandwiches, #macs, #kids, #shakes, #syo, #cocktails, #beers, #wines, #happy-hour {
+    scroll-margin-top: 3.3rem;
 }
+/* FOOD */
 .food, .beverages {
     display: flex;
     flex-direction: column;
@@ -164,6 +167,7 @@ body {
 }
 .food-image>img {
     width: -webkit-fill-available;
+    max-width: 99vw;
     height: auto;
     padding: .25rem;
 }
@@ -218,6 +222,7 @@ ul {
 li {
     font-size: 12px;
     text-indent: -.25rem;
+    text-transform: lowercase;
 }
 li.mods-title {
     font-size: 16px;
@@ -225,9 +230,6 @@ li.mods-title {
 .mods-title {
     text-transform: uppercase;
     font-weight: bold;
-}
-#mods-list {
-    text-transform: lowercase;
 }
 /* BEVERAGES */
 /* COCKTAILS */
@@ -480,13 +482,16 @@ li.mods-title {
     background-color: black;
     width: 75%;
 }
-.happy-hour {
+.happy-hour-title {
     font-family: 'Roboto Slab', serif;
     font-size: 2.2rem;
     font-weight: bold;
     margin: 1rem;
     text-align: center;
-    color:#dddddd;
+    color: white;
+}
+.happy-hour-title>span {
+    font-weight: bolder;
 }
 .happy-hours {
     display: grid;
@@ -495,7 +500,8 @@ li.mods-title {
     "mon-fri mf-hours"
     "fri-sat fs-hours";
     font-family: 'PT Sans', sans-serif;
-    grid-gap: .75rem
+    grid-gap: .75rem;
+    color: #dddddd;
 }
 .mon-fri {grid-area: mon-fri;text-align: end;}
 .mf-hours {grid-area: mf-hours;}
@@ -592,11 +598,6 @@ li.mods-title {
     .wrapper {
         margin: 0 4rem 0 4rem;
     }
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .logo {
         width: 50vw;
     }
@@ -610,6 +611,7 @@ li.mods-title {
         width: 5vw;
     }
 }
+/* Laptop */
 @media screen 
   and (min-device-width: 900px) 
   and (max-device-width: 1600px) 
