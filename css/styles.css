@@ -33,6 +33,7 @@ header {
     align-self: center;
     justify-content: space-around;
     width: -webkit-fill-available;
+    background-color: black;
 }
 .eats, .drinks {
     display: flex;
@@ -42,6 +43,7 @@ header {
     margin: 0;
     padding: 0;
     width: -webkit-fill-available;
+    background-color: black;
 }
 .eats>a, .drinks>a {
     text-decoration: none;
