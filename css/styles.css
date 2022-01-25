@@ -14,6 +14,17 @@ header {
     display: flex;
     flex-direction: column;
 }
+.banner {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: #F14C2C;
+}
+.banner>h1 {
+    font-size: large;
+    color: white;
+    text-align: center;
+}
 .logo {
     margin: 0;
     padding: 0;
@@ -54,9 +65,13 @@ header {
     padding: .5rem;
     width: -webkit-fill-available;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: larger;
     letter-spacing: .05rem;
+    text-shadow: -1px 1px 1px black;
+    -webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: black;
+    paint-order: fill;
 }
 /* SLIDESHOW */
 .fling-minislide {
@@ -67,12 +82,12 @@ header {
 }
 .fling-minislide img {
     position: absolute;
-    animation: fling-minislide 40s infinite;
+    animation: fling-minislide 45s infinite;
     opacity: 0;
     width: 100%;
     height: auto;
 }
-@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+@keyframes fling-minislide {10%{opacity:1;} 20%{opacity:0;}}
 .fling-minislide img:nth-child(8){animation-delay:0s;}
 .fling-minislide img:nth-child(7){animation-delay:5s;}
 .fling-minislide img:nth-child(6){animation-delay:10s;}
