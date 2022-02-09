@@ -189,7 +189,7 @@ header {
     -webkit-text-stroke-color: black;
     color: white;
     border-bottom: 2px solid #242424;
-
+    margin-bottom: .5rem;
 }
 /* DARK BACKGROUND MENU SECTIONS */
 .menu-category-group-dark {
@@ -201,6 +201,7 @@ header {
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: white;
     border-bottom: 2px solid #F14C2C;
+    margin-bottom: .5rem;
 }
 #dark-bg-item {
     color: white;
@@ -210,6 +211,28 @@ header {
 }
 .menu-item-dark>.description {
     color: #dddddd;
+}
+/* VDAY SPECIALS */
+.food>div.menu-category-group-dark#vday-group {
+    padding: 0;
+}
+.menu-category-group-dark#vday-group {
+    background-color: rgb(70, 0, 38);
+    border: 4px dotted red;
+}
+.menu-category-title-dark#vday-title {
+    text-shadow: -3px 2px 0px rgb(255, 0, 128);
+    border-bottom: 2px solid rgb(255, 0, 128);
+}
+.vday-img img {
+    height: auto;
+    width: 100%;
+}
+.vday-caption h2 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
 }
 /* END DARK BG MENU SECTIONS */
 .name-price {
@@ -633,7 +656,7 @@ li.mods-title h3 {
     display: grid;
     grid-template-areas: 
     "friends friends"
-    "facebook instagram";
+    "meta1 meta2";
     grid-template-columns: 1fr 1fr;
     margin: 2rem 0 1rem 0;
     padding-top: 1rem;
@@ -647,15 +670,15 @@ li.mods-title h3 {
     font-size: 1.5rem;
     justify-self: center;
 }
-.facebook {
-    grid-area: facebook;
+.meta1 {
+    grid-area: meta1;
     justify-self: center;
 }
-.instagram {
-    grid-area: instagram;
+.meta2 {
+    grid-area: meta2;
     justify-self: center;
 }
-.facebook img, .instagram img {
+.meta1 img, .meta2 img {
     padding: 1rem;
     width: 50px;
     height: auto;
@@ -701,7 +724,7 @@ li.mods-title h3 {
     .social {
         width: 25vw;
     }
-    .facebook img, .instagram img {
+    .meta1 img, .meta2 img {
         width: 5vw;
     }
 }
