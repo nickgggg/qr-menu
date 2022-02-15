@@ -24,6 +24,11 @@ header {
     font-size: large;
     color: white;
     text-align: center;
+    font-weight: normal;
+}
+.banner>h1 span {
+    font-weight: bold;
+    text-decoration: underline;
 }
 .logo {
     margin: 0;
