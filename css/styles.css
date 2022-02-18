@@ -173,7 +173,13 @@ header {
     display: flex;
     flex-direction: column;
     background-color: white;
+    background-image: url(../img/burger-graphic-sm.png);
+    background-blend-mode: difference;
 }
+/* .menu-category-group-dark {
+    background-image: url(../img/burger-graphic-sm.png);
+    background-blend-mode: overlay;
+} */
 .menu-item, .menu-item-dark {
     display: flex;
     flex-direction: column;
