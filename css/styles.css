@@ -665,6 +665,19 @@ li.mods-title h3 {
     flex-direction: column;
     margin-left: 1rem;
 }
+.back-to-top-button {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    background: #F14C2C;
+    padding: 1rem;
+    margin-top: 2rem;
+    letter-spacing: .1rem;
+}
+.back-to-top-button>a {
+    text-decoration: none;
+    color: white;
+}
 .social {
     display: grid;
     grid-template-areas: 
@@ -696,24 +709,19 @@ li.mods-title h3 {
     width: 50px;
     height: auto;
 }
-.website-link>a {
+a.website-link {
+    display: flex;
     text-decoration: none;
     font-size: 1.25rem;
     color: #dddddd;
+    border-bottom: 2px solid #F1AF2C;
 }
-.back-to-top-button {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.25rem;
-    font-weight: bolder;
-    border: 3px solid #F14C2C;
-    background: #dddddd;
-    padding: .75rem;
-    margin-top: 2rem;
-    letter-spacing: .1rem;
+.website-link p {
+    margin: 0;
 }
-.back-to-top-button>a {
-    text-decoration: none;
-    color: #242424;
+.website-link img {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(100%) contrast(101%);
+    padding-left: 1em;
 }
 
 /* Landscape */
