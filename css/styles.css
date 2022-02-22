@@ -238,8 +238,8 @@ picture.menu-image {
     padding: 1em .75em 1.5em .75em;
 }
 .menu-image>img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     max-width: 90%;
     box-shadow: 
     -.25em -.25em black,
