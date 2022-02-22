@@ -37,7 +37,6 @@ header {
 .logo {
     margin: 0;
     padding: 0;
-    /* width: fit-content; */
     display: block;
 }
 .logo>img {
@@ -66,7 +65,6 @@ header {
     text-decoration: none;
     color: white;
     background-color: #F1AF2C;
-    /* border-bottom: 2px solid #F14C2C; */
     margin: .25rem;
     padding: .5rem;
     width: -webkit-fill-available;
@@ -79,29 +77,6 @@ header {
     -webkit-text-stroke-color: black;
     paint-order: fill;
 }
-/* SLIDESHOW */
-.fling-minislide {
-    width: 100%;
-    aspect-ratio: 15/13;
-    overflow: hidden;
-    position: relative;
-}
-.fling-minislide img {
-    position: absolute;
-    animation: fling-minislide 45s infinite;
-    opacity: 0;
-    width: 100%;
-    height: auto;
-}
-@keyframes fling-minislide {10%{opacity:1;} 20%{opacity:0;}}
-.fling-minislide img:nth-child(8){animation-delay:0s;}
-.fling-minislide img:nth-child(7){animation-delay:5s;}
-.fling-minislide img:nth-child(6){animation-delay:10s;}
-.fling-minislide img:nth-child(5){animation-delay:15s;}
-.fling-minislide img:nth-child(4){animation-delay:20s;}
-.fling-minislide img:nth-child(3){animation-delay:25s;}
-.fling-minislide img:nth-child(2){animation-delay:30s;}
-.fling-minislide img:nth-child(1){animation-delay:35s;}
 
 /* STICKY NAV */
 .nav-wrapper {
@@ -125,14 +100,6 @@ header {
     margin: .5rem .1rem .5rem .1rem;
     padding: 0 .1rem 0 .1rem;
 }
-/* .skip-to-text {
-    font-family: 'Roboto Slab', serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    letter-spacing: .15rem;
-} */
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -147,7 +114,6 @@ header {
 .nav-links>a {
     text-decoration: none;
     color: white;
-    /* background-color: #242424; */
     border-bottom: 2px solid #F14C2C;
     margin: .5rem;
     padding: .25rem 0 .25rem 0;
@@ -174,6 +140,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: white;
+    background-image: url(../img/burger-graphic-sm.webp);
     background-image: url(../img/burger-graphic-sm.png);
     background-blend-mode: difference;
 }
@@ -224,28 +191,6 @@ header {
 .menu-item-dark>.description {
     color: #dddddd;
 }
-/* VDAY SPECIALS */
-.food>div.menu-category-group-dark#vday-group {
-    padding: 0;
-}
-.menu-category-group-dark#vday-group {
-    background-color: rgb(70, 0, 38);
-    border: 4px dotted red;
-}
-.menu-category-title-dark#vday-title {
-    text-shadow: -3px 2px 0px rgb(255, 0, 128);
-    border-bottom: 2px solid rgb(255, 0, 128);
-}
-.vday-img img {
-    height: auto;
-    width: 100%;
-}
-.vday-caption h2 {
-    color: white;
-    text-align: center;
-    font-style: italic;
-    font-size: 1rem;
-}
 /* END DARK BG MENU SECTIONS */
 .name-price {
     display: flex;
@@ -285,11 +230,33 @@ header {
     font-weight: bold;
 
 }
-.food-image>img {
-    width: -webkit-fill-available;
-    max-width: 99vw;
-    height: auto;
-    padding: .25rem;
+picture.menu-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em .75em 1.5em .75em;
+}
+.menu-image>img {
+    width: auto;
+    height: 100%;
+    max-width: 90%;
+    box-shadow: 
+    -.25em -.25em black,
+    -.5em -.5em #F1AF2C;
+    /* .75em .75em #f14c2c; */
+}
+picture.menu-image .menu-image-caption {
+    bottom: 1em;
+    right: 10%;
+    background-color: #f14c2c;
+    color: white;
+    padding: .25em;
+    font-weight: bold;
+    font-style: italic;
+    width: 80%;
+    text-align: center;
+    letter-spacing: .1em;
 }
 
 /* SYO */
@@ -364,7 +331,6 @@ li.mods-title h3 {
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: .5rem;
-    /* background: -webkit-linear-gradient(#F14C2C, #eee); */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -505,10 +471,6 @@ li.mods-title h3 {
 .whites {
     grid-area: whites;
 }
-/* .reds, .whites {
-    border: 1px solid #969696;
-    padding: .1rem;
-} */
 .wine-section-title h2 {
     padding: .25rem;
     margin: 0 0 .25rem 0;
@@ -585,9 +547,6 @@ li.mods-title h3 {
     padding-bottom: .1rem;
     border-bottom: 1px dashed #F14C2C;
 }
-/* .na-bev>div>:nth-child(even) {
-    background-color: 1px solid #F14C2C;
-} */
 
 /* FOOTER */
 .footer {
@@ -749,21 +708,3 @@ a.website-link {
         width: 5vw;
     }
 }
-/* Tablet */
-/* @media only screen 
-  and (min-device-width: 900px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-      body {
-          max-width: 50vw;
-          margin: auto;
-    }
-} */
-/* Big screen */
-/* @media only screen 
-  and (min-device-width: 1440px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-      body {
-          max-width: 33vw;
-          margin: auto;
-    }
-} */
