@@ -239,9 +239,8 @@ picture.menu-image {
 }
 .menu-image>img {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 90%;
-    aspect-ratio: 15/13;
     box-shadow: 
     -.25em -.25em black,
     -.5em -.5em #F1AF2C;
