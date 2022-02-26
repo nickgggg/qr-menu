@@ -314,7 +314,7 @@ li {
     /* line-break indent */
     text-indent: -.33rem;
     text-transform: lowercase;
-    margin-left: 1.75em;
+    margin-left: 1.55em;
 }
 li.mods-title h3 {
     font-size: 16px;
@@ -334,7 +334,7 @@ li.mod-with-price {
     margin-left: 0;
 }
 .mod-price {
-    width: 1.75em;
+    width: 1.5em;
     font-family: 'Roboto Slab', serif;
     font-weight: lighter;
 }
