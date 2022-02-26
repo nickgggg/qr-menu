@@ -284,7 +284,7 @@ picture.menu-image .menu-image-caption {
 .syo-section {
     display: flex;
     flex-direction: column;
-    margin: .2rem;
+    margin: .25rem;
 }
 .syo-section-title h2 {
     display: flex;
@@ -306,7 +306,7 @@ picture.menu-image .menu-image-caption {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0 .33rem .33rem .33rem;
+    padding: 0 .5rem .5rem .5rem;
     font-family: 'PT Sans', sans-serif;
 }
 li {
@@ -314,7 +314,7 @@ li {
     /* line-break indent */
     text-indent: -.33rem;
     text-transform: lowercase;
-    margin-left: 1.75em;
+    margin: 0;
 }
 li.mods-title h3 {
     font-size: 16px;
@@ -325,21 +325,7 @@ li.mods-title h3 {
     font-weight: bold;
     font-size: 16px;
     margin: 0;
-
 }
-
-/* ----------------- TESTING MOD PRICING -------------------- */
-li.mod-with-price {
-    display: flex;
-    margin-left: 0;
-}
-.mod-price {
-    width: 1.75em;
-    font-family: 'Roboto Slab', serif;
-    font-weight: lighter;
-}
-/* ----------------- TESTING MOD PRICING -------------------- */
-
 /* BEVERAGES */
 /* COCKTAILS */
 .beverages-title h1 {
