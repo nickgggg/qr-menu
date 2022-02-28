@@ -299,10 +299,16 @@ picture.menu-image .menu-image-caption {
 }
 .syo-mods-wrapper {
     display: grid;
-    grid-template-areas: "col1 col2 col3";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "col1 col2"
+    "mods-row mods-row";
+    grid-template-columns: 1fr 1fr;
     padding-top: .5rem;
+    margin: 0em .33em;
 }
+.col1 {grid-area: col1;}
+.col2 {grid-area: col2;}
+.mods-row {grid-area: mods-row;}
 ul {
     list-style-type: none;
     margin: 0;
@@ -315,6 +321,7 @@ li {
     text-indent: -.33rem;
     text-transform: lowercase;
     margin-left: 1.55em;
+    display: flex;
 }
 li.mods-title h3 {
     font-size: 16px;
@@ -327,6 +334,48 @@ li.mods-title h3 {
     margin: 0;
 
 }
+
+/* ----------------- TABLE LAYOUT -------------------- */
+/* table, thead, tbody, tr, td {
+    border: 1px solid red;
+} */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-indent: 0;
+    margin: .33em;
+}
+td#mods-title, div#mods-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+td {
+    padding-left: .75em;
+    font-size: 12px;
+    text-transform: lowercase;
+    text-indent: -.33em;
+    vertical-align: top;
+}
+td#mod-price {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    padding: 0;
+}
+#mods-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+#mods-flex>div {
+    padding-right: 1.25em;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+/* ----------------- END TABLE LAYOUT -------------------- */
+
 
 /* ----------------- TESTING MOD PRICING -------------------- */
 li.mod-with-price {
