@@ -328,7 +328,7 @@ td {
     text-indent: -.33em;
     vertical-align: text-top;
 }
-td#mod-price {
+td#mod-price, div#mod-price {
     font-family: 'Roboto Slab', serif;
     font-weight: 200;
     padding: 0;
@@ -346,12 +346,7 @@ td#mod-price {
     font-size: 12px;
     text-transform: lowercase;
 }
-.mod-price {
-    width: 1.5em;
-    font-family: 'Roboto Slab', serif;
-    font-weight: lighter;
-}
-/* ----------------- SYO TABLES -------------------- */
+/* ----------------- END SYO TABLES -------------------- */
 
 /* BEVERAGES */
 /* COCKTAILS */
