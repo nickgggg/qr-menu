@@ -144,10 +144,6 @@ header {
     background-image: url(../img/burger-graphic-sm.png);
     background-blend-mode: difference;
 }
-/* .menu-category-group-dark {
-    background-image: url(../img/burger-graphic-sm.png);
-    background-blend-mode: overlay;
-} */
 .menu-item, .menu-item-dark {
     display: flex;
     flex-direction: column;
@@ -170,7 +166,7 @@ header {
     border-bottom: 2px solid #242424;
     margin-bottom: .5rem;
 }
-/* DARK BACKGROUND MENU SECTIONS */
+/*************** DARK BACKGROUND MENU SECTIONS ***************/
 .menu-category-group-dark {
     background-color: #242424;
 }
@@ -191,7 +187,7 @@ header {
 .menu-item-dark>.description {
     color: #dddddd;
 }
-/* END DARK BG MENU SECTIONS */
+/*************** END DARK BG MENU SECTIONS **************/
 .name-price {
     display: flex;
     flex-direction: row;
@@ -269,11 +265,10 @@ picture.menu-image .menu-image-caption {
 .syo-title h1 {
     display: flex;
     justify-content: center;
-    width: -webkit-fill-available;
+    align-items: center;
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 900;
+    font-size: 2.25em;
     letter-spacing: .2rem;
     text-shadow: -3px 2px 0px #242424;
     color: white;
@@ -281,17 +276,12 @@ picture.menu-image .menu-image-caption {
     background-color: #F14C2C;
     margin: 0;
 }
-.syo-section {
-    display: flex;
-    flex-direction: column;
-    margin: .25rem;
-}
 .syo-section-title h2 {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 1.75em;
+    font-weight: 600;
     font-family: 'Roboto Slab', serif;
     color: white;
     background-color: #242424;
@@ -299,33 +289,61 @@ picture.menu-image .menu-image-caption {
 }
 .syo-mods-wrapper {
     display: grid;
-    grid-template-areas: "col1 col2 col3";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "col1 col2"
+    "mods-row mods-row";
+    grid-template-columns: 1fr 1fr;
     padding-top: .5rem;
+    margin: 0em .33em;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 .5rem .5rem .5rem;
-    font-family: 'PT Sans', sans-serif;
+.col1 {grid-area: col1;}
+.col2 {grid-area: col2;}
+.mods-row {grid-area: mods-row;}
+
+/* ----------------- SYO TABLES -------------------- */
+/* table, thead, tbody, tr, td {
+    border: 1px solid red;
+} */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-indent: 0;
+    margin: .33em;
 }
-li {
-    font-size: 12px;
-    /* line-break indent */
-    text-indent: -.33rem;
-    text-transform: lowercase;
-    margin: 0;
-}
-li.mods-title h3 {
-    font-size: 16px;
-    margin: 0;
-}
-.mods-title {
+td#mods-title, div#mods-title {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
     margin: 0;
+    padding: 0;
 }
+td {
+    padding-left: .75em;
+    font-size: 12px;
+    text-transform: lowercase;
+    text-indent: -.33em;
+    vertical-align: text-top;
+}
+td#mod-price, div#mod-price {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    padding: 0;
+}
+.mods-row>#mods-title {
+    text-align: center;
+}
+#mods-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#mods-flex>div {
+    padding-right: .75em;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+/* ----------------- END SYO TABLES -------------------- */
+
 /* BEVERAGES */
 /* COCKTAILS */
 .beverages-title h1 {
