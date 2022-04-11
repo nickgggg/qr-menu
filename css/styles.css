@@ -586,6 +586,16 @@ td#mod-price, div#mod-price {
     width: 50vw;
     max-width: 300px;
 }
+.disclaimers {
+    text-align: center;
+    width: 75%;
+    margin: 0 0 1rem 0;
+    font-family: 'Roboto Slab', serif;
+}
+#disclaimer-warning {
+    font-style: italic;
+    font-weight: lighter;
+}
 .happy-hour-wrapper {
     border: 1px solid #969696;
     margin-top: 1rem;
