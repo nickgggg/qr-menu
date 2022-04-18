@@ -31,8 +31,12 @@ header {
     font-weight: normal;
 }
 .banner>h1 span {
+    font-style: italic;
+}
+.banner>h1 span a {
+    color: white;
     font-weight: bold;
-    text-decoration: underline;
+    font-style: normal;
 }
 .logo {
     margin: 0;
@@ -125,7 +129,7 @@ header {
     text-shadow: #FC0 1px 0 2px;
     /* border-bottom: 2px dashed #f14c2c; */
 }
-#appetizers-sides, #sliders, #salads, #soups, #bowls, #burgers, #burritos, #pizza, #sandwiches, #macs, #kids, #shakes, #syo, #beverages, #cocktails, #beers, #wines, #happy-hour {
+#appetizers-sides, #sliders, #salads, #soups, #bowls, #burgers, #burritos, #pizza, #sandwiches, #macs, #kids, #shakes, #syo, #beverages, #cocktails, #beers, #wines, #happy-hour, #queso-dip {
     scroll-margin-top: 3.3rem;
 }
 /* FOOD */
