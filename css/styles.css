@@ -414,7 +414,28 @@ td#mod-price, div#mod-price {
     text-transform: lowercase;
     color: #dddddd;
 }
-
+.margarita-crawl-group {
+    /* border: 3px solid #F14C2C; */
+    padding: 5px;
+    background-color: rgb(255, 199, 174);
+    box-shadow: 
+    .25em .25em limegreen;
+    margin-bottom: .5em;
+}
+.margarita-crawl-group-title h2 {
+    font-size: 1.5em;
+    color: black;
+    margin: 0em 0em .25em 0em;
+    padding: 0em 0em .25em 0em;
+    border-bottom: 2px solid white;
+    font-variant: small-caps;
+}
+#margarita-crawl-drink {
+    color: black;
+}
+#margarita-crawl-drink .cocktails-description {
+    color: #242424;
+}
 /* BEERS */
 .beers {
     display: grid;
