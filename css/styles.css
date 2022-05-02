@@ -228,7 +228,19 @@ header {
 }
 .base-choices>span {
     font-weight: bold;
-
+}
+.heinz-details {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    /* text-transform: lowercase;
+    font-weight: lighter; */
+    font-style: italic;
+    font-size: .8rem;
+    color: #eee;
+    padding: 0 .5rem 0 .5rem;
 }
 picture.menu-image {
     display: flex;
@@ -257,6 +269,12 @@ picture.menu-image .menu-image-caption {
     width: 80%;
     text-align: center;
     letter-spacing: .1em;
+}
+
+/* HEINZ */
+.heinz-group {
+    background-color: rgb(130, 0, 0);
+    padding: .5em;
 }
 
 /* SYO */
