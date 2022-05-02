@@ -172,7 +172,8 @@ header {
 }
 /*************** DARK BACKGROUND MENU SECTIONS ***************/
 .menu-category-group-dark {
-    background-color: #242424;
+    background: rgb(36,36,36);
+    background: linear-gradient(145deg, rgba(36,36,36,1) 33%, rgba(0,0,0,1) 100%);
 }
 .menu-category-title-dark {
     color: white;
@@ -432,35 +433,38 @@ td#mod-price, div#mod-price {
     text-transform: lowercase;
     color: #dddddd;
 }
-.margarita-crawl-group {
-    /* border: 3px solid #F14C2C; */
-    padding: 5px;
-    background-color: rgb(255, 199, 174);
-    box-shadow: 
-    .25em .25em limegreen;
-    margin-bottom: .5em;
-}
-.margarita-crawl-group-title h2 {
-    font-size: 1.5em;
-    color: black;
-    margin: 0em 0em .25em 0em;
-    padding: 0em 0em .25em 0em;
-    border-bottom: 2px solid white;
-    font-variant: small-caps;
-}
-#margarita-crawl-drink {
-    color: black;
-}
-#margarita-crawl-drink .cocktails-description {
-    color: #242424;
-}
+
+/* MARGARITA CRAWL */
+    /* .margarita-crawl-group {
+        padding: 5px;
+        background-color: rgb(255, 199, 174);
+        box-shadow: 
+        .25em .25em limegreen;
+        margin-bottom: .5em;
+    }
+    .margarita-crawl-group-title h2 {
+        font-size: 1.5em;
+        color: black;
+        margin: 0em 0em .25em 0em;
+        padding: 0em 0em .25em 0em;
+        border-bottom: 2px solid white;
+        font-variant: small-caps;
+    }
+    #margarita-crawl-drink {
+        color: black;
+    }
+    #margarita-crawl-drink .cocktails-description {
+        color: #242424;
+    } */
+
 /* BEERS */
 .beers {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "beers-title beers-title"
-    "drafts bottles-cans";
+    "drafts bottles-cans"
+    "ask ask";
     grid-gap: .5rem;
     padding: .5rem .25rem .5rem .25rem;
     margin-bottom: 1rem;
@@ -469,6 +473,7 @@ td#mod-price, div#mod-price {
 .beers-title {grid-area: beers-title;}
 .drafts {grid-area: drafts;}
 .bottles-cans {grid-area: bottles-cans;}
+.ask {grid-area: ask;}
 
 .beers-title h1, .wines-title h1 {
     display: flex;
@@ -513,6 +518,10 @@ td#mod-price, div#mod-price {
     font-size: 16px;
     text-indent: -.25rem;
     text-transform: capitalize;
+}
+.ask>h3 {
+    text-align: center;
+    color: #242424;
 }
 
 /* WINES */
