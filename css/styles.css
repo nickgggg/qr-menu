@@ -264,8 +264,8 @@ picture.menu-image .menu-image-caption {
 
 /* HEINZ */
 
-/* .heinz-group {
-    background-color: rgb(130, 0, 0);
+.heinz-group {
+    background-color: rgba(130, 0, 0, 0.5);
     padding: .5em;
 }
 .heinz-details {
@@ -280,7 +280,7 @@ picture.menu-image .menu-image-caption {
     font-size: .8rem;
     color: #eee;
     padding: 0 .5rem 0 .5rem;
-} */
+}
 
 
 
