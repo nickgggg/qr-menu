@@ -19,7 +19,7 @@ header {
     flex-direction: column;
 }
 
-/* .banner {
+.banner {
     display: block;
     margin: 0;
     padding: 0;
@@ -31,14 +31,10 @@ header {
     text-align: center;
     font-weight: normal;
 }
-.banner>h1 span {
-    font-style: italic;
-}
-.banner>h1 span a {
+.banner>h1 a {
     color: white;
-    font-weight: bold;
     font-style: normal;
-} */
+}
 
 .logo {
     margin: 0;
@@ -132,7 +128,7 @@ header {
     text-shadow: #FC0 1px 0 2px;
     /* border-bottom: 2px dashed #f14c2c; */
 }
-#appetizers-sides, #sliders, #salads, #soups, #bowls, #burgers, #burritos, #pizza, #sandwiches, #macs, #kids, #shakes, #syo, #beverages, #cocktails, #beers, #wines, #happy-hour, #queso-dip {
+#appetizers-sides, #sliders, #salads, #soups, #bowls, #burgers, #burritos, #pizza, #sandwiches, #macs, #kids, #shakes, #syo, #beverages, #cocktails, #beers, #wines, #happy-hour, #queso-dip, #volcano {
     scroll-margin-top: 3.3rem;
 }
 /* FOOD */
