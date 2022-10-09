@@ -459,6 +459,31 @@ td#mod-price, div#mod-price {
         color: #242424;
     } */
 
+.cocktails-section#empress {
+    background-color: rgb(219, 219, 179);
+    color: black;
+    padding: .25em;
+    border: 2px solid maroon;
+}
+.empress-gin-title h1 {
+    margin: 0;
+    padding: 0;
+}
+.empress-gin-title h1 span {
+    color: maroon;
+}
+.empress-gin-title h2 {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: medium;
+}
+.empress-cocktails-grid {
+    display: grid;
+}
+.empress-cocktails>.cocktails-description {
+    color: #242424;
+}
+
 /* BEERS */
 .beers {
     display: grid;
