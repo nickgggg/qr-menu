@@ -128,7 +128,7 @@ header {
     text-shadow: #FC0 1px 0 2px;
     /* border-bottom: 2px dashed #f14c2c; */
 }
-#appetizers-sides, #sliders, #salads, #soups, #bowls, #burgers, #burritos, #pizza, #sandwiches, #macs, #kids, #shakes, #syo, #beverages, #cocktails, #beers, #wines, #happy-hour, #queso-dip, #volcano {
+#appetizers-sides, #sliders, #salads, #soups, #bowls, #burgers, #burritos, #pizza, #sandwiches, #macs, #kids, #shakes, #syo, #beverages, #cocktails, #beers, #wines, #happy-hour, #queso-dip, #volcano, #patty-melt {
     scroll-margin-top: 3.3rem;
 }
 /* FOOD */
