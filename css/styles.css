@@ -23,7 +23,9 @@ header {
     display: block;
     margin: 0;
     padding: 0;
-    background-color: #F14C2C;
+    /* background-color: #F14C2C; */
+    background-color: green;
+    border: 4px dotted red;
 }
 .banner>h1 {
     font-size: large;
@@ -35,7 +37,21 @@ header {
     color: white;
     font-style: normal;
 }
-
+/* HOLIDAY PROMO STYLING */
+.holiday-promo-link {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.holiday-promo-link h1, a, img {
+    font-size: large;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    font-style: normal;
+}
+/* END HOLIDAY PROMO STYLING */
 .logo {
     margin: 0;
     padding: 0;
@@ -162,9 +178,14 @@ header {
     text-align: center;
 }
 .menu-category-title {
-    text-shadow: -3px 2px 0px #242424;
-    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: black;
+    text-shadow:
+        1px 1px 0px #242424,
+        1px -1px 0px #242424,
+        -1px 1px 0px #242424,
+        -1px -1px 0px #242424,
+        -4px 3px 0px #242424;
     color: white;
     border-bottom: 2px solid #242424;
     margin-bottom: .5rem;
@@ -260,11 +281,11 @@ picture.menu-image .menu-image-caption {
 
 /* HEINZ */
 
-.heinz-group {
+.lto-burger-group {
     background-color: rgba(130, 0, 0, 0.5);
     padding: .5em;
 }
-.heinz-details {
+.lto-burger-details {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -793,6 +814,9 @@ a.website-link {
 .website-link img {
     filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(100%) contrast(101%);
     padding-left: 1em;
+}
+.external-link {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(100%) contrast(101%);
 }
 
 /* Landscape */
